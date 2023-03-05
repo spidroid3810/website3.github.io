@@ -196,14 +196,10 @@ text-align: center;
   .text {font-size: 11px}
 }
 
-img{
-width: 100%;
-
-}
 
 
 .wrapper{
-  background: blue;
+  background: #0096FF;
   position: fixed;
   width: 100%;
 }
