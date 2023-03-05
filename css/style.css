@@ -88,7 +88,12 @@ height: 100vh;
  
  
  @media (min-width: 500px) {
- 
+   
+   .hook{
+   position: absolute;
+   left: 55%;
+   }
+   
    .triangle {
     position: absolute;
    left: 48%;
@@ -196,10 +201,14 @@ text-align: center;
   .text {font-size: 11px}
 }
 
+img{
+width: 100%;
+
+}
 
 
 .wrapper{
-  background: #0096FF;
+  background: #ffffff;
   position: fixed;
   width: 100%;
 }
@@ -234,7 +243,7 @@ height: 50px;
 }
 .contents .links li a,
 .contents .links li label{
-  color: #fff;
+  color: #111;
   font-size: 18px;
   font-weight: 500;
   padding: 9px 17px;
@@ -246,7 +255,7 @@ height: 50px;
 }
 .contents .links li a:hover,
 .contents .links li label:hover{
-  background: #323c4e;
+  background: #ffd700;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{
@@ -371,7 +380,7 @@ height: 50px;
   nav .contents .links{
     display: block;
     position: fixed;
-    background: #14181f;
+    background: #0096FF;
     height: 100%;
     width: 100%;
     top: 70px;
