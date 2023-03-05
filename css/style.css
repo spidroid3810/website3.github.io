@@ -320,7 +320,7 @@ height: 50px;
 /* Dropdown Menu code start */
 .contents .links ul{
   position: absolute;
-  background: #171c24;
+  background: #ffffff;
   top: 80px;
   z-index: -1;
   opacity: 0;
