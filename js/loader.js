@@ -2,7 +2,7 @@
     var myVar;
     
     function myFunction() {
-    myVar = setTimeout(showPage, 4000);
+    myVar = setTimeout(showPage, 4500);
     }
     
     function showPage() {
@@ -11,55 +11,27 @@
     }
     
     
-    var slideIndex = 0;
-    showSlides();
-    var slides,dots;
+        
     
-    function showSlides() {
-    var i;
-    slides = document.getElementsByClassName("mySlides");
-    dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    $(".carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+    0:{
+    items:1,
+    nav: false
+    },
+    600:{
+    items:1,
+    nav: false
+    },
+    1000:{
+    items:1,
+    nav: false
     }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 6000); // Change image every 8 seconds
-    }
-    
-    function plusSlides(position) {
-    slideIndex +=position;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    else if(slideIndex<1){slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    }
-    
-    function currentSlide(index) {
-    if (index> slides.length) {index = 1}
-    else if(index<1){index = slides.length}
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[index-1].style.display = "block";  
-    dots[index-1].className += " active";
-    }
-    
-    
-    
-    
+    });
     
