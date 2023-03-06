@@ -25,11 +25,11 @@
     nav: false
     },
     600:{
-    items:1,
+    items:3,
     nav: false
     },
     1000:{
-    items:1,
+    items:3,
     nav: false
     }
     }
