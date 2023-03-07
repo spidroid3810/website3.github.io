@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-
+background: #eee;
 
 }
 
@@ -122,12 +122,13 @@ text-align: center;
 .wrap{
  width: 100%;
  }
+ 
+ 
             
 .carousel{
-max-width: 1200px;
+width: 1200px;
 margin: auto;
 padding: 0;
-background: #eee;
 }
 
 .carousel .card{
@@ -205,7 +206,8 @@ height: 60px;
 }
 .contents .links li a:hover,
 .contents .links li label:hover{
-  background: #89CFF0;
+  background: #ffd700;
+  color: #4169E1;
 }
 .wrapper .search-icon,
 .wrapper .menu-icon{
@@ -330,7 +332,7 @@ height: 60px;
   nav .contents .links{
     display: block;
     position: fixed;
-    background: #0096FF;
+    background: #eee;
     height: 100%;
     width: 100%;
     top: 70px;
@@ -382,6 +384,8 @@ height: 60px;
     line-height: 30px;
     border-radius: 5px!important;
   }
+  
+
 }
 
 @media screen and (max-width: 400px){
@@ -411,3 +415,52 @@ height: 60px;
   margin-top: 70px;
   color: #fff;
 }
+
+.cards {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ max-width: 300px;
+ margin: auto;
+ text-align: center;
+ font-family: arial;
+ background: #242424;
+  border-radius: 0.25rem;
+}
+
+.price {
+ color: grey;
+ font-size: 22px;
+}
+
+.cards button {
+ border: none;
+ outline: 0;
+ padding: 12px;
+ color: white;
+ background-color: #C41E3A;
+ text-align: center;
+ cursor: pointer;
+ width: 50%;
+ font-size: 18px;
+  border-radius: 0.25rem;
+  margin: 10px;
+}
+
+.cards button:hover {
+ opacity: 0.7;
+}
+
+.pro{
+    width: 250px;
+    height: 250px;
+    object-fit: fill;
+     border-radius: 0.25rem;
+}
+
+.slide{
+   width: 300px;
+   height: 300px;
+   object-fit:fill;
+}
+
+        
+ 
