@@ -627,28 +627,25 @@ margin: 10px;
   font-size: 30px;
  font-weight: 700;
  color: #fff;
- text-shadow: 0 2px red , 0 2px red; 
- background: #ffd700;
+ background: crimson;
  width:200px;
  height:60px;
  line-height:60px;
- color:white;
  margin:20px auto;
  position:absolute;
  top: 50%;
- left: 27.8%;
- transform: translate(-50%, -50%);
+ transform: translate(-10%, -50%);
 }
 
 .centered:before{
   content:"";
   width:0px;
   height:0px;
-  border-top:60px solid #ffd700;
+  border-top:60px solid crimson;
   border-right:60px solid transparent;
   position:absolute;
   left:100%;
-  top:0px;
+  top:0;
 }
 
 
@@ -661,7 +658,6 @@ margin: 10px;
  font-size: 20px;
  font-weight: 700;
  color: #fff;
- text-shadow: 0 2px red , 0 2px red; 
  background: rgba(0, 0, 0, 0.5);
  padding: 10px;
  
@@ -673,28 +669,37 @@ margin: 10px;
  
  .card-con { grid-template-columns: repeat(2, 1fr); }
  
- 
  .centered {
  font-size: 50px;
- text-shadow: 0 4px red , 0 4px red; 
- width:350px;
- height: 120px;
+ font-weight: 700;
+ color: #fff;
+ background: crimson;
+ width:400px;
+ height:120px;
  line-height:120px;
+ margin:20px auto;
  position:absolute;
- left: 23.8%;
+ top: 50%;
+ transform: translate(-10%, -50%);
  }
  
  .centered:before{
- border-top:120px solid #ffd700;
+ content:"";
+ width:0px;
+ height:0px;
+ border-top:120px solid crimson;
  border-right:120px solid transparent;
+ position:absolute;
+ left:100%;
+ top:0;
  }
- 
- .centered1 {
- font-size: 35px;
- text-shadow: 0 4px red , 0 4px red; 
- }
- 
- 
+
+.centered1 {
+font-size:40px;
+}
+
+
+
  
  .cont{
  width: 100%;
