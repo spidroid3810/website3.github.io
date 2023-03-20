@@ -14,6 +14,7 @@ background: #eee;
 #loader{
 width: 100%;
 height: 100vh;
+
 }
 
 .rope{
@@ -23,8 +24,9 @@ height: 100vh;
  border-left: 5px solid #111;
  border-right: 5px solid #111;
  position: absolute;
- left: 47%;
- margin-top: -600px;
+ transform: translate(-50%, -50%);
+ left: 50%;
+ margin-top: -300px;
  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
  }
  
@@ -42,8 +44,8 @@ height: 100vh;
   height: 150px;
   width: 150px;
   position: absolute;
-  left: 51.4%;
-  transform:translate(-50%,-50%);
+  transform: translate(-50%, -55%);
+  left: 50%;
   margin-top: 128px;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
@@ -58,7 +60,8 @@ height: 100vh;
   color: transparent;
   font-size: 15px;
   position: absolute;
-  left: 49%;
+  transform: translate(-50%, -30%);
+  left: 50%;
   margin-top: 170px;
   }
   
@@ -66,8 +69,8 @@ height: 100vh;
   text-align: center;
   background: #fff;
   position: absolute;
-  left: 51%;
-  transform:translate(-50%,-50%);
+  transform: translate(-50%, -55%);
+  left: 50%;
   height: 80px;
   width: 200px;
   border: 5px solid #111;
@@ -88,21 +91,7 @@ height: 100vh;
  
  @media (min-width: 500px) {
    
-   .hook{
-   position: absolute;
-   left: 50%;
-   }
    
-   .triangle {
-    position: absolute;
-   left: 49%;
-   }
-   
-   #geek2 {
-   position: absolute;
-   left: 50%;
-   }
-
  
  
  }
